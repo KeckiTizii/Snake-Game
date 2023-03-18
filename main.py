@@ -21,8 +21,6 @@ gameDisplay = pygame.display.set_mode((window_width, window_height))
 
 pygame.display.set_caption('Snake game')
 
-# bg_img = pygame.image.load("assets/bg.png").convert()
-# bg_img = pygame.transform.scale(bg_img, (800, 600))
 over = pygame.image.load("assets/evaporate-disappear.gif").convert()
 over = pygame.transform.scale(over, (800, 600))
  
@@ -102,7 +100,6 @@ def gameLoop():
             
         x1 += x1_change
         y1 += y1_change
-        # gameDisplay.blit(bg_img, (0, 0))
         gameDisplay.fill(gray)
         pygame.draw.rect(gameDisplay, red, [foodx, foody, snake_block, snake_block])
         
